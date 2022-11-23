@@ -1,0 +1,46 @@
+/* формула расчета ширины одного айтема внутри флекс-сетки */
+/* может применяться также к свойству flex-basis: */
+/* по обоим сторонам математических знаков оставляем пробелы */
+.element {
+    width: calc((100% - кол-во марджинов в ряду * значение марджина) / кол-во элементов в ряду);
+}
+
+
+
+
+
+
+
+/* Технический класс-helper для скрытия контента */
+/* Можно использовать также класс .sr-only */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+
+
+
+
+/* шаблон респонсивного декоративного изображения */
+.box {
+    width: 480px;
+    height: 320px;
+    background-image: url('photo.jpg');
+    background-size: 480px 320px;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url('photo@2x.jpg');
+    }
+}
