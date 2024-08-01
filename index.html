@@ -1,59 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dementor.org - Study Repositorie</title>
 
-    <!-- поключение файла сброса -->
+
+
+    <!-- підключенная файла reset -->
     <link rel="stylesheet" href="./css/reset.css">
 
-    <!-- поключение кастомного файла стилей -->
+    <!-- тут можна підключати css-файли плагінів і бібліотек -->
+
+    <!-- підключенная файла style, де ви пишете власні стилі -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <section></section>
+        <section></section>
+        <section></section>
+    </main>
+    <footer></footer>
 
 
-    <!-- шаблон респонсивного контентного изображения -->
-	<picture>
-
-		<source srcset="./images/team/team1.jpg 1x, ./images/team/team1.jpg 2x" media="(min-width:1200px)">
-
-		<source srcset="./images/team/team1-tab.jpg 1x, ./images/team/team1-tab-2x.jpg 2x" media="(min-width:768px)">
-
-		<source srcset="./images/team/team1-mob.jpg 1x, ./images/team/team1-mob-2x.jpg 2x" media="(min-width:320px)">
-
-		<img src="./images/team/team1.jpg" alt="член команды Игорь" class="team__img" width="270" height="260">
-
-	</picture>
-
-
-    <!-- пример респонсивного контентного изображения, реализованного для тега img с атрибутом srcset. Дано для примера и понимания. Лучше использовать предыдущий шаблон с тегом picture -->
-    <img
-        srcset="
-            photo-300.jpg   300w,
-            photo-600.jpg   600w,
-            photo-900.jpg   900w,
-            photo-1200.jpg 1200w
-        "
-        sizes="400px"
-        src="photo-300.jpg"
-        alt="лес"
-    />
-
-
-
-
-
-    <!-- подключение скрипта модального окна -->
-    <script src="./js/modal.js"></script>
-
-    <!-- подключение скрипта мобильного меню -->
-    <script src="./js/mobile-menu.js"></script>
-
-    <!-- подключение остальных скриптов проекта -->
+    <!-- подключення локальних скриптів -->
     <script src="./js/main.js"></script>
 </body>
 </html>

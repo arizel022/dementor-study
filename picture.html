@@ -1,0 +1,22 @@
+<!-- аблон респонсивного контентного зображення для тега img із атрибутом srcset. Надано для прикладу і розуміння. Кращим варіантом є тег  picture.  -->
+<img srcset="
+            photo-300.jpg   300w,
+            photo-600.jpg   600w,
+            photo-900.jpg   900w,
+            photo-1200.jpg 1200w
+        " sizes="400px" src="photo-300.jpg" alt="ліс" />
+<!-- * у цьому прикладі порушено оформлення коду. Використовуючи цю заготовку, відформатуйте атрибути тега в один рядок. -->
+
+
+
+
+
+
+
+<!-- шаблон респонсивного контентного зображення -->
+<picture>
+    <source srcset="./images/team/team1.jpg 1x, ./images/team/team1.jpg 2x" media="(min-width:1200px)">
+    <source srcset="./images/team/team1-tab.jpg 1x, ./images/team/team1-tab-2x.jpg 2x" media="(min-width:768px)">
+    <source srcset="./images/team/team1-mob.jpg 1x, ./images/team/team1-mob-2x.jpg 2x" media="(min-width:320px)">
+    <img src="./images/team/team1.jpg" alt="член команды Игорь" class="team__img" width="270" height="260">
+</picture>
